@@ -44,6 +44,7 @@
 				9BBA41AF205AE3DA00F01F1B /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		9BBA41AF205AE3DA00F01F1B /* Products */ = {
 			isa = PBXGroup;
