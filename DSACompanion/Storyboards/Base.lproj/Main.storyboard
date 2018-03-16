@@ -86,7 +86,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UfK-xg-oBl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fähigkeiten" id="h9Z-ef-F9G"/>
+                    <tabBarItem key="tabBarItem" title="Fähigkeiten" image="TabItemIcon_Fähigkeiten" selectedImage="TabItemIcon_Fähigkeiten" id="h9Z-ef-F9G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTb-2t-Be4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +122,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="08e-Jm-rBt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Vor-/Nachteile" id="URR-mi-eS4"/>
+                    <tabBarItem key="tabBarItem" title="Vor-/Nachteile" image="TabItemIcon_VorNachteile" selectedImage="TabItemIcon_VorNachteile" id="URR-mi-eS4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBT-7t-4KI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +158,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gFV-Pg-NFO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Kampf" id="vPY-SM-UTe"/>
+                    <tabBarItem key="tabBarItem" title="Kampf" image="TabItemIcon_Kampf" selectedImage="TabItemIcon_Kampf" id="vPY-SM-UTe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZ5-Uj-PGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +194,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wns-cS-EQh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inventar" id="Q9D-ZS-cMa"/>
+                    <tabBarItem key="tabBarItem" title="Inventar" image="TabItemIcon_Inventar" selectedImage="TabItemIcon_Inventar" id="Q9D-ZS-cMa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyS-Mu-3er" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,7 +230,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fFp-Bp-g4X"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rumpfdaten" id="8fA-pL-Sy6"/>
+                    <tabBarItem key="tabBarItem" title="Rumpfdaten" image="TabItemIcon_Rumpfdaten" selectedImage="TabItemIcon_Rumpfdaten" id="8fA-pL-Sy6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dat-UK-5zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,4 +258,11 @@
             <point key="canvasLocation" x="-551" y="81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabItemIcon_Fähigkeiten" width="25" height="25"/>
+        <image name="TabItemIcon_Inventar" width="25" height="25"/>
+        <image name="TabItemIcon_Kampf" width="25" height="25"/>
+        <image name="TabItemIcon_Rumpfdaten" width="25" height="25"/>
+        <image name="TabItemIcon_VorNachteile" width="25" height="25"/>
+    </resources>
 </document>
