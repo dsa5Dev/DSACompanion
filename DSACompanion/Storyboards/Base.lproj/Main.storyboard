@@ -54,57 +54,187 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1874" y="83"/>
+            <point key="canvasLocation" x="-2066" y="81"/>
         </scene>
-        <!--Item 2-->
+        <!--faehigkeiten_tab-->
         <scene sceneID="24d-0x-sQ9">
             <objects>
-                <viewController id="aJU-wN-s66" sceneMemberID="viewController">
+                <viewController id="aJU-wN-s66" userLabel="faehigkeiten_tab" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ojo-VU-e4p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fähigkeiten" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4Q-yJ-pcj">
-                                <rect key="frame" x="143" y="323" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MgG-Gt-WYd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fähigkeiten">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MgG-Gt-WYd" firstAttribute="trailing" secondItem="UfK-xg-oBl" secondAttribute="trailing" id="2wh-eW-CfO"/>
+                            <constraint firstItem="MgG-Gt-WYd" firstAttribute="leading" secondItem="UfK-xg-oBl" secondAttribute="leading" id="38h-NZ-rL2"/>
+                            <constraint firstItem="MgG-Gt-WYd" firstAttribute="bottom" secondItem="UfK-xg-oBl" secondAttribute="bottom" id="cyH-ug-bUf"/>
+                            <constraint firstItem="MgG-Gt-WYd" firstAttribute="top" secondItem="ojo-VU-e4p" secondAttribute="top" id="yog-BR-h5E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UfK-xg-oBl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="h9Z-ef-F9G"/>
+                    <tabBarItem key="tabBarItem" title="Fähigkeiten" id="h9Z-ef-F9G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTb-2t-Be4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="205.59999999999999" y="490.70464767616198"/>
+            <point key="canvasLocation" x="-1153" y="1013"/>
         </scene>
-        <!--Item 1-->
+        <!--vornachteil_tab-->
+        <scene sceneID="fRh-lm-o6b">
+            <objects>
+                <viewController id="IkW-oO-sDf" userLabel="vornachteil_tab" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IpF-iA-kHG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Aur-7c-tfo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Vor-/Nachteile">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aur-7c-tfo" firstAttribute="bottom" secondItem="08e-Jm-rBt" secondAttribute="bottom" id="JIL-S2-R1q"/>
+                            <constraint firstItem="Aur-7c-tfo" firstAttribute="trailing" secondItem="08e-Jm-rBt" secondAttribute="trailing" id="NMb-bZ-pJj"/>
+                            <constraint firstItem="Aur-7c-tfo" firstAttribute="top" secondItem="IpF-iA-kHG" secondAttribute="top" id="hFp-wK-ido"/>
+                            <constraint firstItem="Aur-7c-tfo" firstAttribute="leading" secondItem="08e-Jm-rBt" secondAttribute="leading" id="s1E-KD-f71"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="08e-Jm-rBt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vor-/Nachteile" id="URR-mi-eS4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBT-7t-4KI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="1013"/>
+        </scene>
+        <!--kampf_tab-->
+        <scene sceneID="Bk6-k9-fot">
+            <objects>
+                <viewController id="6zj-jT-BAJ" userLabel="kampf_tab" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBe-eU-mNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="huR-cu-x1I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Kampf">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="huR-cu-x1I" firstAttribute="leading" secondItem="gFV-Pg-NFO" secondAttribute="leading" id="8H9-Yw-DSh"/>
+                            <constraint firstItem="huR-cu-x1I" firstAttribute="top" secondItem="PBe-eU-mNZ" secondAttribute="top" id="HC7-Fx-v1f"/>
+                            <constraint firstItem="huR-cu-x1I" firstAttribute="bottom" secondItem="gFV-Pg-NFO" secondAttribute="bottom" id="Tvh-A8-cc0"/>
+                            <constraint firstItem="huR-cu-x1I" firstAttribute="trailing" secondItem="gFV-Pg-NFO" secondAttribute="trailing" id="bMa-9e-zEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gFV-Pg-NFO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kampf" id="vPY-SM-UTe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZ5-Uj-PGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="1013"/>
+        </scene>
+        <!--inventar_tab-->
+        <scene sceneID="FSF-Ai-44z">
+            <objects>
+                <viewController id="xpm-vT-Ohg" userLabel="inventar_tab" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lwp-js-FaD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Id-p0-2tb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Inventar">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Id-p0-2tb" firstAttribute="leading" secondItem="Wns-cS-EQh" secondAttribute="leading" id="XPu-Zk-kRS"/>
+                            <constraint firstItem="9Id-p0-2tb" firstAttribute="trailing" secondItem="Wns-cS-EQh" secondAttribute="trailing" id="d2i-RH-jMV"/>
+                            <constraint firstItem="9Id-p0-2tb" firstAttribute="bottom" secondItem="Wns-cS-EQh" secondAttribute="bottom" id="fwK-bb-wdi"/>
+                            <constraint firstItem="9Id-p0-2tb" firstAttribute="top" secondItem="lwp-js-FaD" secondAttribute="top" id="vHP-hj-ci3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wns-cS-EQh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inventar" id="Q9D-ZS-cMa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyS-Mu-3er" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="1013"/>
+        </scene>
+        <!--rumpfdaten_tab-->
         <scene sceneID="xce-s3-Tr0">
             <objects>
-                <viewController id="nHR-Bb-sEw" sceneMemberID="viewController">
+                <viewController id="nHR-Bb-sEw" userLabel="rumpfdaten_tab" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3av-1o-YVW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rumpfdaten" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-tQ-pLD">
-                                <rect key="frame" x="140" y="323" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-tQ-pLD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rumpfdaten">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="top" secondItem="3av-1o-YVW" secondAttribute="top" id="AA5-UL-zWK"/>
+                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="bottom" secondItem="fFp-Bp-g4X" secondAttribute="bottom" id="DdF-Xq-8ew"/>
+                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="leading" secondItem="fFp-Bp-g4X" secondAttribute="leading" id="I1N-Ge-UWL"/>
+                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="trailing" secondItem="fFp-Bp-g4X" secondAttribute="trailing" id="MZY-9D-xGN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fFp-Bp-g4X"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="8fA-pL-Sy6"/>
+                    <tabBarItem key="tabBarItem" title="Rumpfdaten" id="8fA-pL-Sy6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dat-UK-5zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="207" y="-268"/>
+            <point key="canvasLocation" x="-1833" y="1014"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="F5U-gh-SE8">
@@ -118,11 +248,14 @@
                     <connections>
                         <segue destination="nHR-Bb-sEw" kind="relationship" relationship="viewControllers" id="fKh-Gl-mGH"/>
                         <segue destination="aJU-wN-s66" kind="relationship" relationship="viewControllers" id="3YU-w5-PMM"/>
+                        <segue destination="IkW-oO-sDf" kind="relationship" relationship="viewControllers" id="KGj-zw-zEx"/>
+                        <segue destination="6zj-jT-BAJ" kind="relationship" relationship="viewControllers" id="QLc-ew-Asr"/>
+                        <segue destination="xpm-vT-Ohg" kind="relationship" relationship="viewControllers" id="8w0-Wq-M65"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHf-99-eUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="84"/>
+            <point key="canvasLocation" x="-551" y="81"/>
         </scene>
     </scenes>
 </document>
