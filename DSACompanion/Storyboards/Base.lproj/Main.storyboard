@@ -204,37 +204,141 @@
         <scene sceneID="xce-s3-Tr0">
             <objects>
                 <viewController id="nHR-Bb-sEw" userLabel="rumpfdaten_tab" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3av-1o-YVW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="3av-1o-YVW" userLabel="basic_view">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-tQ-pLD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Rumpfdaten">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="Futura-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKw-Ur-3BP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="951"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qd2-d5-mF8" userLabel="view_in_scrollview">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TabItemIcon_Rumpfdaten" translatesAutoresizingMaskIntoConstraints="NO" id="SZ4-VZ-DL2" userLabel="imageVIew_characterPic">
+                                                <rect key="frame" x="127.5" y="25" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="oIk-OM-jFc"/>
+                                                    <constraint firstAttribute="height" constant="120" id="yxH-Tv-nKI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vl-df-cik" userLabel="view_fuer_eigenschaften">
+                                                <rect key="frame" x="0.0" y="160" width="375" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4K1-FL-1Hj" userLabel="eigenschaften_stack">
+                                                        <rect key="frame" x="20" y="14" width="335" height="23"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF3-GP-5ZG" userLabel="wert_mut">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2Z-67-Pkl" userLabel="wert_klugheit">
+                                                                <rect key="frame" x="43" y="0.0" width="33.5" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-6q-NZ5" userLabel="wert_intuition">
+                                                                <rect key="frame" x="86.5" y="0.0" width="33" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hu-hs-NhW" userLabel="wert_charisma">
+                                                                <rect key="frame" x="129.5" y="0.0" width="33" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-Mp-abM" userLabel="wert_fingerfertigkeit">
+                                                                <rect key="frame" x="172.5" y="0.0" width="33" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krP-zt-JKI" userLabel="wert_gewandheit">
+                                                                <rect key="frame" x="215.5" y="0.0" width="33.5" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hte-kH-QtO" userLabel="wert_konstitution">
+                                                                <rect key="frame" x="259" y="0.0" width="33" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-oa-U7w" userLabel="wert_koerperkraft">
+                                                                <rect key="frame" x="302" y="0.0" width="33" height="23"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="2" height="-8"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="4K1-FL-1Hj" secondAttribute="trailing" constant="20" symbolic="YES" id="5cY-rf-y64"/>
+                                                    <constraint firstAttribute="height" constant="50" id="6Wg-qZ-5Ee"/>
+                                                    <constraint firstItem="4K1-FL-1Hj" firstAttribute="centerY" secondItem="1vl-df-cik" secondAttribute="centerY" id="8B9-2b-kFM"/>
+                                                    <constraint firstItem="4K1-FL-1Hj" firstAttribute="leading" secondItem="1vl-df-cik" secondAttribute="leading" constant="20" symbolic="YES" id="GVt-ov-UAB"/>
+                                                    <constraint firstItem="4K1-FL-1Hj" firstAttribute="centerX" secondItem="1vl-df-cik" secondAttribute="centerX" id="a1A-Ir-Y9u"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EIGENSCHAFTEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEF-NW-xk1" userLabel="label_eigenschaften">
+                                                <rect key="frame" x="20" y="143" width="84.5" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1vl-df-cik" secondAttribute="trailing" id="6TD-Wn-M3Q"/>
+                                            <constraint firstItem="SZ4-VZ-DL2" firstAttribute="centerX" secondItem="qd2-d5-mF8" secondAttribute="centerX" id="F3g-Y3-Uus"/>
+                                            <constraint firstItem="1vl-df-cik" firstAttribute="top" secondItem="nEF-NW-xk1" secondAttribute="bottom" constant="5" id="QEx-8i-0iJ"/>
+                                            <constraint firstItem="1vl-df-cik" firstAttribute="leading" secondItem="qd2-d5-mF8" secondAttribute="leading" id="RB4-in-yN9"/>
+                                            <constraint firstAttribute="height" constant="1000" id="bxj-3N-LCX"/>
+                                            <constraint firstItem="SZ4-VZ-DL2" firstAttribute="top" secondItem="qd2-d5-mF8" secondAttribute="top" constant="25" id="dKS-Zy-17k"/>
+                                            <constraint firstItem="nEF-NW-xk1" firstAttribute="leading" secondItem="qd2-d5-mF8" secondAttribute="leading" constant="20" symbolic="YES" id="oxF-g6-Qa8"/>
+                                            <constraint firstItem="1vl-df-cik" firstAttribute="top" secondItem="SZ4-VZ-DL2" secondAttribute="bottom" constant="15" id="x0g-1E-BpC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qd2-d5-mF8" secondAttribute="trailing" id="4Rf-1p-fnD"/>
+                                    <constraint firstItem="qd2-d5-mF8" firstAttribute="top" secondItem="JKw-Ur-3BP" secondAttribute="top" id="819-Sf-AFt"/>
+                                    <constraint firstItem="qd2-d5-mF8" firstAttribute="leading" secondItem="JKw-Ur-3BP" secondAttribute="leading" id="AUq-XC-3gh"/>
+                                    <constraint firstAttribute="bottom" secondItem="qd2-d5-mF8" secondAttribute="bottom" id="QG6-Va-vr9"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="top" secondItem="3av-1o-YVW" secondAttribute="top" id="AA5-UL-zWK"/>
-                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="bottom" secondItem="fFp-Bp-g4X" secondAttribute="bottom" id="DdF-Xq-8ew"/>
-                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="leading" secondItem="fFp-Bp-g4X" secondAttribute="leading" id="I1N-Ge-UWL"/>
-                            <constraint firstItem="bXv-tQ-pLD" firstAttribute="trailing" secondItem="fFp-Bp-g4X" secondAttribute="trailing" id="MZY-9D-xGN"/>
+                            <constraint firstItem="JKw-Ur-3BP" firstAttribute="bottom" secondItem="fFp-Bp-g4X" secondAttribute="bottom" id="Jbt-jm-A62"/>
+                            <constraint firstItem="qd2-d5-mF8" firstAttribute="width" secondItem="3av-1o-YVW" secondAttribute="width" id="KaC-ov-sip"/>
+                            <constraint firstItem="JKw-Ur-3BP" firstAttribute="trailing" secondItem="fFp-Bp-g4X" secondAttribute="trailing" id="Ld6-Pd-xMl"/>
+                            <constraint firstItem="JKw-Ur-3BP" firstAttribute="leading" secondItem="fFp-Bp-g4X" secondAttribute="leading" id="NiO-da-XvW"/>
+                            <constraint firstItem="JKw-Ur-3BP" firstAttribute="top" secondItem="3av-1o-YVW" secondAttribute="top" id="ydp-xd-FKZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fFp-Bp-g4X"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rumpfdaten" image="TabItemIcon_Rumpfdaten" selectedImage="TabItemIcon_Rumpfdaten" id="8fA-pL-Sy6"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dat-UK-5zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1833" y="1014"/>
+            <point key="canvasLocation" x="-1834.4000000000001" y="1012.8935532233884"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="F5U-gh-SE8">
