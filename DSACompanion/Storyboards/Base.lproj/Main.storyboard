@@ -203,7 +203,7 @@
         <!--rumpfdaten_tab-->
         <scene sceneID="xce-s3-Tr0">
             <objects>
-                <viewController id="nHR-Bb-sEw" userLabel="rumpfdaten_tab" sceneMemberID="viewController">
+                <viewController id="nHR-Bb-sEw" userLabel="rumpfdaten_tab" customClass="RumpfdatenViewController" customModule="DSACompanion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3av-1o-YVW" userLabel="basic_view">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qd2-d5-mF8" userLabel="view_in_scrollview">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TabItemIcon_Rumpfdaten" translatesAutoresizingMaskIntoConstraints="NO" id="SZ4-VZ-DL2" userLabel="imageView_characterPic">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example_char_profile_pic" translatesAutoresizingMaskIntoConstraints="NO" id="SZ4-VZ-DL2" userLabel="imageView_characterPic">
                                                 <rect key="frame" x="127.5" y="25" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="oIk-OM-jFc"/>
@@ -231,65 +231,68 @@
                                                 <rect key="frame" x="0.0" y="160" width="375" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4K1-FL-1Hj" userLabel="eigenschaften_stack">
-                                                        <rect key="frame" x="20" y="14" width="335" height="23"/>
+                                                        <rect key="frame" x="20" y="10.5" width="335" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF3-GP-5ZG" userLabel="wert_mut">
-                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="23"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2Z-67-Pkl" userLabel="wert_klugheit">
-                                                                <rect key="frame" x="43" y="0.0" width="33.5" height="23"/>
+                                                                <rect key="frame" x="43" y="0.0" width="33.5" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-6q-NZ5" userLabel="wert_intuition">
-                                                                <rect key="frame" x="86.5" y="0.0" width="33" height="23"/>
+                                                                <rect key="frame" x="86.5" y="0.0" width="33" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hu-hs-NhW" userLabel="wert_charisma">
-                                                                <rect key="frame" x="129.5" y="0.0" width="33" height="23"/>
+                                                                <rect key="frame" x="129.5" y="0.0" width="33" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-Mp-abM" userLabel="wert_fingerfertigkeit">
-                                                                <rect key="frame" x="172.5" y="0.0" width="33" height="23"/>
+                                                                <rect key="frame" x="172.5" y="0.0" width="33" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krP-zt-JKI" userLabel="wert_gewandheit">
-                                                                <rect key="frame" x="215.5" y="0.0" width="33.5" height="23"/>
+                                                                <rect key="frame" x="215.5" y="0.0" width="33.5" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hte-kH-QtO" userLabel="wert_konstitution">
-                                                                <rect key="frame" x="259" y="0.0" width="33" height="23"/>
+                                                                <rect key="frame" x="259" y="0.0" width="33" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-oa-U7w" userLabel="wert_koerperkraft">
-                                                                <rect key="frame" x="302" y="0.0" width="33" height="23"/>
+                                                                <rect key="frame" x="302" y="0.0" width="33" height="30"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <size key="shadowOffset" width="2" height="-8"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="hWm-1M-ebA"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -516,6 +519,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Rumpfdaten" image="TabItemIcon_Rumpfdaten" selectedImage="TabItemIcon_Rumpfdaten" id="8fA-pL-Sy6"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="imageView_characterPic" destination="SZ4-VZ-DL2" id="nbh-7v-0B4"/>
+                        <outlet property="wert_charisma" destination="1hu-hs-NhW" id="oQ7-kd-7e7"/>
+                        <outlet property="wert_fingerfertigkeit" destination="rbL-Mp-abM" id="FFO-sW-eWZ"/>
+                        <outlet property="wert_gewandheit" destination="krP-zt-JKI" id="6WL-pj-18w"/>
+                        <outlet property="wert_intuition" destination="qxc-6q-NZ5" id="uUt-b9-p5a"/>
+                        <outlet property="wert_klugheit" destination="X2Z-67-Pkl" id="wcV-gk-Dz5"/>
+                        <outlet property="wert_koerperkraft" destination="Njh-oa-U7w" id="DyW-36-jL6"/>
+                        <outlet property="wert_konstitution" destination="hte-kH-QtO" id="ERb-LF-nZc"/>
+                        <outlet property="wert_mut" destination="hF3-GP-5ZG" id="tUg-JH-mSd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dat-UK-5zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -555,5 +569,6 @@
         <image name="TabItemIcon_Kampf" width="25" height="25"/>
         <image name="TabItemIcon_Rumpfdaten" width="25" height="25"/>
         <image name="TabItemIcon_VorNachteile" width="25" height="25"/>
+        <image name="example_char_profile_pic" width="152" height="134"/>
     </resources>
 </document>
