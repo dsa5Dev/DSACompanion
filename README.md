@@ -3,8 +3,8 @@
 ### Author
 Patrick Mondani
 
-### Description
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac dolor justo, ac tempus leo. Etiam pulvinar eros at lectus sollicitudin scelerisque. Aliquam erat volutpat. Suspendisse eu eros non elit blandit suscipit. Morbi scelerisque euismod tempus.
+### Beschreibung
+Der DSA Companion ist eine mobile Anwendung für das iPhone und soll beim Pen-and-Paper-Rollenspiel "Das Schwarze Auge" den Spieler unterstützen.
 
 ### Dependencies
 - foo
