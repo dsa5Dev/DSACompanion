@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6B80FE209C941F00A7D002 /* FaehigkeitenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B80FD209C941F00A7D002 /* FaehigkeitenViewController.swift */; };
 		9B742830205ED73900F3EA00 /* RumpfdatenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74282F205ED73900F3EA00 /* RumpfdatenViewController.swift */; };
 		9BBA41B2205AE3DA00F01F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA41B1205AE3DA00F01F1B /* AppDelegate.swift */; };
 		9BBA41B4205AE3DA00F01F1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA41B3205AE3DA00F01F1B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B6B80FD209C941F00A7D002 /* FaehigkeitenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaehigkeitenViewController.swift; sourceTree = "<group>"; };
 		9B74282F205ED73900F3EA00 /* RumpfdatenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RumpfdatenViewController.swift; sourceTree = "<group>"; };
 		9BBA41AE205AE3DA00F01F1B /* DSACompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSACompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBA41B1205AE3DA00F01F1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				9BBA41B3205AE3DA00F01F1B /* ViewController.swift */,
 				9B74282F205ED73900F3EA00 /* RumpfdatenViewController.swift */,
+				9B6B80FD209C941F00A7D002 /* FaehigkeitenViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6B80FE209C941F00A7D002 /* FaehigkeitenViewController.swift in Sources */,
 				9B742830205ED73900F3EA00 /* RumpfdatenViewController.swift in Sources */,
 				9BBA41B4205AE3DA00F01F1B /* ViewController.swift in Sources */,
 				9BBA41B2205AE3DA00F01F1B /* AppDelegate.swift in Sources */,
