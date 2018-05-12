@@ -10,6 +10,13 @@ import UIKit
 
 class FaehigkeitenDetailViewController: UIViewController {
 
+    // UI-Elemente
+    @IBOutlet weak var leiteigenschaftEinsLabel: UILabel!
+    @IBOutlet weak var leiteigenschaftZweiLabel: UILabel!
+    @IBOutlet weak var leiteigenschaftDreiLabel: UILabel!
+    
+    @IBOutlet weak var beschreibungTextView: UITextView!
+    
     // Fähigkeit die in der View im Detail angezeigt werden soll.
     var faehigkeit: String!
     
