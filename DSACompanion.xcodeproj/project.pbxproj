@@ -15,6 +15,7 @@
 		9BBA41B9205AE3DB00F01F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBA41B8205AE3DB00F01F1B /* Assets.xcassets */; };
 		9BBA41BC205AE3DB00F01F1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBA41BA205AE3DB00F01F1B /* LaunchScreen.storyboard */; };
 		9BBA41CE205AE65F00F01F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BBA41CD205AE65F00F01F1B /* Localizable.strings */; };
+		9BE5C32F20A6C6EF00D7BD94 /* FaehigkeitenDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE5C32E20A6C6EF00D7BD94 /* FaehigkeitenDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9BBA41BB205AE3DB00F01F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BBA41BD205AE3DB00F01F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BBA41CD205AE65F00F01F1B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9BE5C32E20A6C6EF00D7BD94 /* FaehigkeitenDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaehigkeitenDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6B80FF20A1FD5E00A7D002 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		9BBA41A5205AE3DA00F01F1B = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +70,7 @@
 		9BBA41B0205AE3DA00F01F1B /* DSACompanion */ = {
 			isa = PBXGroup;
 			children = (
+				9B6B80FF20A1FD5E00A7D002 /* TableViewCells */,
 				9BBA41C4205AE43500F01F1B /* Application Delegate */,
 				9BBA41C5205AE44C00F01F1B /* View Controllers */,
 				9BBA41C6205AE46700F01F1B /* Storyboards */,
@@ -84,6 +94,7 @@
 				9BBA41B3205AE3DA00F01F1B /* ViewController.swift */,
 				9B74282F205ED73900F3EA00 /* RumpfdatenViewController.swift */,
 				9B6B80FD209C941F00A7D002 /* FaehigkeitenViewController.swift */,
+				9BE5C32E20A6C6EF00D7BD94 /* FaehigkeitenDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 				9B6B80FE209C941F00A7D002 /* FaehigkeitenViewController.swift in Sources */,
 				9B742830205ED73900F3EA00 /* RumpfdatenViewController.swift in Sources */,
 				9BBA41B4205AE3DA00F01F1B /* ViewController.swift in Sources */,
+				9BE5C32F20A6C6EF00D7BD94 /* FaehigkeitenDetailViewController.swift in Sources */,
 				9BBA41B2205AE3DA00F01F1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

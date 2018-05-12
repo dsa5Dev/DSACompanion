@@ -13,37 +13,40 @@ class FaehigkeitenViewController: UIViewController {
     @IBOutlet weak var faehigkeitenTableView: UITableView!
     
     var faehigkeiten = [String]()
-    
+    var faehigkeitDetail: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("FaehigkeitenViewController ist geladen...")
-        faehigkeiten.append("Kraftakt")
-        faehigkeiten.append("Überzeugen")
-        print("faehigkeiten-Array initialisiert...")
+        initalizeFaehigkeiten()
         faehigkeitenTableView.dataSource = self
-        print("faehigkeitenTableView dataSource connected...")
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        faehigkeitenTableView.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Initialisiere die Daten im Fähigkeiten-Array
+    func initalizeFaehigkeiten(){
+        faehigkeiten.append("Kraftakt")
+        faehigkeiten.append("Überzeugen")
     }
-    */
-
+    
+    // Vorbereitung für View-Wechsel
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? FaehigkeitenDetailViewController{
+            if let detailText = faehigkeitDetail{
+                destinationViewController.faehigkeit = detailText
+            }
+        }
+    }
 }
 
+/*
+*       Erweiterung für DataSource
+*
+*
+*
+*
+*
+*
+*/
 extension FaehigkeitenViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return faehigkeiten.count
@@ -53,5 +56,21 @@ extension FaehigkeitenViewController: UITableViewDataSource{
         let cell = faehigkeitenTableView.dequeueReusableCell(withIdentifier: "faehigkeitCell", for: indexPath)
         cell.textLabel?.text = faehigkeiten[indexPath.row]
         return cell
+    }
+}
+
+/*
+ *       Erweiterung für Delegate
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+extension FaehigkeitenViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        faehigkeitDetail = faehigkeiten[indexPath.row]
+        performSegue(withIdentifier: "ShowDetail", sender: nil)
     }
 }
